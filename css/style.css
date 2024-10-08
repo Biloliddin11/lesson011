@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #F9FAFF;
+}
+.container{
+    max-width: 1472px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+li{
+    list-style: none;
+}
+button,
+input{
+    outline: none;
+}
+.header{
+    padding: 51px 135px 80px 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar__logo{
+    flex: 1;
+    transform: translateY(-500px);
+    animation: logo .7s ease-out .3s forwards;
+    opacity: 0;
+
+  }
+  
+@keyframes logo{
+    to{
+    transform: translateY(0px);
+     opacity: 1;}
+  }
+
+.navbar__menu{
+    width: 720px;
+    display: flex;
+}
+.navbar__collection{
+    width: 354px;
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    align-items: center;
+}
+.navbar__iteam{
+    transform: translateX(-500px);
+    animation: text .3s ease-out .3s forwards;
+    opacity: 0;
+
+  }
+  
+@keyframes text{
+    to{
+    transform: translateX(0px);
+     opacity: 1;}
+  }
+
+.navbar__btn{
+    width: 118px;
+    height: 42px;
+    text-align: center;
+    color: #fff;
+    background:#f3A86B;
+    border: none;
+    left: -500;
+    border-radius: 5px;
+    position: relative;
+    top: -50;
+    animation: btn 2.6s ease-in 0s  forwards;
+    opacity: 0;
+
+  }
+  
+  @keyframes btn {
+        50%{left: -500px; top: -50px; opacity: 0;}
+        75%{left: 0; top: -50px; opacity: .5;}
+        100%{left: 0px; top: 0;opacity: 1;}
+            
+    }
+.hero__wrapper{
+    display: flex;
+    opacity: 1;
+}
+.hero__text,
+.hero__img{
+width: 50%;
+}
+.hero__text{
+    width: 538px;
+    align-items: center;
+    margin: auto;
+}
+.hero__text h2{
+    font-family: Rubik;
+    font-size: 72px;
+    font-weight: 500;
+
+}
+.hero__text p{
+    margin: 42px 0 40px 0;
+}
+.hero__btn{
+        width: 118px;
+        height: 42px;
+        text-align: center;
+        color: #fff;
+        background:#f3A86B;
+        border: none;
+        left: 0;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        animation: heop__btn 1.5s ease-in 0s  forwards;
+        opacity: 0;
+    
+      }
+      
+      @keyframes heop__btn {
+            50%{left: -50px; top: -50px; opacity: 0;}
+            75%{left: 0; top: -50px; opacity: .5;}
+            100%{left: 0px; top: 0;opacity: 1;}
+                
+        }
+.body{
+    padding: 120px 0 60px;
+}
+.body__wrapper{
+    text-align: center;    
+}
+
+.body__name{
+    text-align: center;
+    color: #3D3D3F;
+    font-size: 40px;
+    font-weight: 700;
+}
+.body__card__all{
+    margin-top: 54px;
+    border: 1px solid #EBEBEBCC;
+    display: grid;
+    border-radius: 17px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 36px 0;
+}
+.body__card{
+    text-align: center;
+    align-items: center;
+    border-left: 2px solid #EBEBEBCC;
+    padding: 54px 0 52px 0;
+
+}
+
+.body__h4{
+    padding: 27px 0 13px 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+.body__text{
+    font-size: 24px;
+    font-weight: 400;
+    color: #3d3d3f;
+}
+.blog__wrapper{
+    width: 100%;
+}
+
+.blog__title{
+    color: #DC780B;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.blog__name{
+    color: #150C01;
+    font-size: 31px;
+    font-weight: 700;
+    text-align: center;
+}
+.blog__card__all{
+    display: grid;
+    grid-gap: 51px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.blog__card{
+    width: 356px;
+    height: 374.12px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+}
+.blog__icon{
+    width: 102px;
+    height: 102px;
+    box-shadow:  0 0 1px gray;
+    border-radius: 50%;
+    padding: 23.5px;
+    color: #aaa;
+    margin: 0 105px;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+
+}
+.blog__menu{
+    width: 270;
+    height: 302px;
+    align-items: center;
+    border-radius: 23px;
+    position: relative;
+    top: 200px;
+    box-shadow:  0 0 1px gray;
+    padding: 0px 17px 0px 62px;
+}
+.blog__h4{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.blog__text{
+    padding-bottom: 27px;
+}
+.blog__btn{
+   width: 42px;
+   height: 42px;
+   border-radius: 50%;
+   border: none;
+   background: red;
+}
+.projects__section{
+    margin-top: 60px;
+}
+.h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.view-projects-btn {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: relative;
+    left: 550px;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+.team-section {
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 22%;
+    box-shadow: 0 4px 8px #0000001a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
